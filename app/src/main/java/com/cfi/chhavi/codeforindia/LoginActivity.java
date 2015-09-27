@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.util.List;
+
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
 
@@ -47,6 +49,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
         String uniqueLoginId = loginId.getText().toString();
+        //List<Delivery> deliveries=Delivery.find(Delivery.class,"DeliveryID=?",uniqueLoginId);
+        //if(deliveries.get(0)==null)
+
         //if(uniqueLoginId)
         //Login Function
         //Access database

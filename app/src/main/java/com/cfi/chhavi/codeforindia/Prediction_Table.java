@@ -11,14 +11,15 @@ public class Prediction_Table extends SugarRecord<Prediction_Table> {
     Date date;
     Consumption predictedConsumption;
     Consumption actualConsumption;
+    int SchoolID;
 
     public Prediction_Table(){
 
     }
-    public Prediction_Table(Date date, Consumption predictedConsumption, Consumption actualConsumption){
+    public Prediction_Table(Date date, Consumption predictedConsumption, Consumption actualConsumption, int SchoolID){
         this.date=date;
         this.predictedConsumption=predictedConsumption;
         this.actualConsumption=actualConsumption;
-
+        this.SchoolID=SchoolID;
     }
 }
