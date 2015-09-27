@@ -21,12 +21,24 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:text="login"
-        android:id="@+id/login_button"
+        android:text="login for Kitchen"
+        android:id="@+id/login_button_kitchen"
         android:textColor="@color/white"
-        android:background="@color/teal_400"
-        android:layout_marginBottom="118dp"
+        android:background="@color/red_500"
+        android:layout_marginBottom="75dp"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/uniqueLoginId"
         android:layout_alignStart="@+id/uniqueLoginId" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="login for staff"
+        android:id="@+id/login_button_delivery"
+        android:textColor="@color/white"
+        android:background="@color/teal_400"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/login_button_kitchen"
+        android:layout_alignStart="@+id/login_button_kitchen" />
+
 </RelativeLayout>

@@ -12,7 +12,67 @@ public class School extends SugarRecord<School> {
     int totalStrengthPrimary;
     int totalStrengthUpperPrimary;
     int totalStrength;
-   // Prediction_Table prediction_table;
+    boolean delivered;
+
+
+
+    public static String address = "demo address";
+    public String getSchoolName() {
+        return schoolName;
+    }
+
+    public void setSchoolName(String schoolName) {
+        this.schoolName = schoolName;
+    }
+
+    public int getSchoolID() {
+        return schoolID;
+    }
+
+    public void setSchoolID(int schoolID) {
+        this.schoolID = schoolID;
+    }
+
+    public int getKitchenID() {
+        return kitchenID;
+    }
+
+    public void setKitchenID(int kitchenID) {
+        this.kitchenID = kitchenID;
+    }
+
+    public int getTotalStrengthPrimary() {
+        return totalStrengthPrimary;
+    }
+
+    public void setTotalStrengthPrimary(int totalStrengthPrimary) {
+        this.totalStrengthPrimary = totalStrengthPrimary;
+    }
+
+    public int getTotalStrengthUpperPrimary() {
+        return totalStrengthUpperPrimary;
+    }
+
+    public void setTotalStrengthUpperPrimary(int totalStrengthUpperPrimary) {
+        this.totalStrengthUpperPrimary = totalStrengthUpperPrimary;
+    }
+
+    public int getTotalStrength() {
+        return totalStrength;
+    }
+
+    public void setTotalStrength(int totalStrength) {
+        this.totalStrength = totalStrength;
+    }
+
+    public boolean isDelivered() {
+        return delivered;
+    }
+
+    public void setDelivered(boolean delivered) {
+        this.delivered = delivered;
+    }
+    // Prediction_Table prediction_table;
 
     public School(){
 

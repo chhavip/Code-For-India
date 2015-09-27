@@ -1,5 +1,6 @@
 package com.cfi.chhavi.codeforindia;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -14,14 +15,28 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
 
     EditText loginId;
-    Button loginButton;
+    Button loginButtonDelivery;
+    Button loginButtonKitchen;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        InitializeDB initializeDB = new InitializeDB();
+        initializeDB.initializing();
         loginId = (EditText) findViewById(R.id.uniqueLoginId);
-        loginButton = (Button) findViewById(R.id.login_button);
-        loginButton.setOnClickListener(this);
+        loginButtonDelivery = (Button) findViewById(R.id.login_button_delivery);
+        loginButtonKitchen = (Button) findViewById(R.id.login_button_kitchen);
+        loginButtonKitchen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        loginButtonDelivery.setOnClickListener(this);
+        Delivery.deleteAll(Delivery.class);
+        Delivery delivery = new Delivery("Mohan", 1234);
+        delivery.save();
     }
 
     @Override
@@ -48,11 +63,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
-        String uniqueLoginId = loginId.getText().toString();
-        //List<Delivery> deliveries=Delivery.find(Delivery.class,"DeliveryID=?",uniqueLoginId);
-        //if(deliveries.get(0)==null)
-
-        //if(uniqueLoginId)
+        if(loginId.getText().toString() != null ) {
+            String uniqueLoginId = loginId.getText().toString();
+            List<Delivery> deliveries = Delivery.find(Delivery.class, "Delivery_ID= ?", uniqueLoginId);
+            if(deliveries.get(0) != null)   {
+                Intent i = new Intent();
+                i.setClass(this, SchoolsListofDeliveryActivity.class);
+                startActivity(i);
+            }
+        }
         //Login Function
         //Access database
     }
