@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.cfi.chhavi.kitchenhelper.KitchenMain;
+
 import java.util.List;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
@@ -21,6 +23,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_login);
         InitializeDB initializeDB = new InitializeDB();
         initializeDB.initializing();
@@ -30,7 +33,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         loginButtonKitchen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i = new Intent(LoginActivity.this,KitchenMain.class);
+                startActivity(i);
+                finish();
             }
         });
         loginButtonDelivery.setOnClickListener(this);
@@ -70,6 +75,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 Intent i = new Intent();
                 i.setClass(this, SchoolsListofDeliveryActivity.class);
                 startActivity(i);
+                finish();
             }
         }
         //Login Function

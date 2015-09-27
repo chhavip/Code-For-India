@@ -9,8 +9,8 @@ import java.util.List;
  * Created by dell pc on 27-09-2015.
  */
 public class Consumption extends SugarRecord<Consumption> {
-    Date date;
-    int attendanceToday;
+    public Date date;
+    public int attendanceToday;
     int previousWeekAttendance;
     int previousMonthAttendance;
     public Consumption(){

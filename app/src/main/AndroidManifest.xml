@@ -22,6 +22,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
         <meta-data
@@ -44,6 +45,12 @@
             android:name=".CaptureSignature"
             android:screenOrientation="landscape"
             android:label="@string/title_activity_capture_signature" >
+        </activity>
+        <activity
+            android:name="com.cfi.chhavi.kitchenhelper.KitchenMain"
+            android:theme="@style/MyNavigationDrawerTheme"
+           >
+
         </activity>
     </application>
 
