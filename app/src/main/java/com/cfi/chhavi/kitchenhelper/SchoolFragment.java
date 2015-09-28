@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import com.cfi.chhavi.codeforindia.R;
 import com.cfi.chhavi.codeforindia.School;
@@ -27,7 +28,9 @@ public class SchoolFragment extends Fragment {
         schoolItems.add(si);
         si=new SchoolItem("Kendriya Vidyalaya", 350, 250, 400, 700);
         schoolItems.add(si);
-
+        SchoolAdapter schoolAdapter= new SchoolAdapter(getActivity(),schoolItems, inflater);
+        ListView lv=(ListView)v.findViewById(R.id.listView);
+        lv.setAdapter(schoolAdapter);
 
         return v;
 

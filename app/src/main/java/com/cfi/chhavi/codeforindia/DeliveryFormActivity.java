@@ -21,13 +21,13 @@ public class DeliveryFormActivity extends AppCompatActivity implements View.OnCl
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delivery_form);
-        //Intent i = getIntent();
-        //mSchool = (School) i.getExtras().get("school");
-        TextView schoolName = (TextView) findViewById(R.id.schoolName);
-        TextView schoolAddress = (TextView) findViewById(R.id.schoolAddress);
+//        Intent i = getIntent();
+//        mSchool = (School) i.getExtras().get("school");
+        TextView schoolName = (TextView) findViewById(R.id.schoolNameDeliveryForm);
+        TextView schoolAddress = (TextView) findViewById(R.id.schoolAddressDeliveryForm);
 //        if(mSchool != null)  {
-//            schoolName.setText(mSchool.getSchoolName());
-//            schoolAddress.setText(mSchool.getAddress());
+            schoolName.setText("Kendriya Vidyalaya, Phase 1");
+            schoolAddress.setText("R.K.Puram, New Delhi");
 //        }
         submit = (Button) findViewById(R.id.submitButton);
         submit.setOnClickListener(this);

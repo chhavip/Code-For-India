@@ -30,16 +30,16 @@ public class SchoolsListofDeliveryActivity extends AppCompatActivity {
     }
 
     private void populateSchoolsList() {
+        mSchools.add(new School("Kendriya Vidyalaya, Phase 1", 1, 50, 60, 1 ));
+        mSchools.add(new School("Bal Bharti", 1, 50, 60, 1 ));
+        mSchools.add(new School("Kendriya Vidyalaya", 1, 50, 60, 1 ));
+        mSchools.add(new School("Sophia", 1, 50, 60, 1 ));
+        mSchools.add(new School("Saint Mary", 1, 50, 60, 1 ));
         mSchools.add(new School("Delhi Public School", 1, 50, 60, 1 ));
+        mSchools.add(new School("Shiksha Bhavan", 1, 50, 60, 1 ));
         mSchools.add(new School("Delhi Public School", 1, 50, 60, 1 ));
-        mSchools.add(new School("Delhi Public School", 1, 50, 60, 1 ));
-        mSchools.add(new School("Delhi Public School", 1, 50, 60, 1 ));
-        mSchools.add(new School("Delhi Public School", 1, 50, 60, 1 ));
-        mSchools.add(new School("Delhi Public School", 1, 50, 60, 1 ));
-        mSchools.add(new School("Delhi Public School", 1, 50, 60, 1 ));
-        mSchools.add(new School("Delhi Public School", 1, 50, 60, 1 ));
-        mSchools.add(new School("Delhi Public School", 1, 50, 60, 1 ));
-        mSchools.add(new School("Delhi Public School", 1, 50, 60, 1 ));
+        mSchools.add(new School("Navodaya Vidyalaya", 1, 50, 60, 1 ));
+        mSchools.add(new School("Modern Public School", 1, 50, 60, 1 ));
 
         //Fetch Data from Database
     }

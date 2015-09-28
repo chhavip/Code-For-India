@@ -6,23 +6,29 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Scholl name"
+        android:text="School name"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
         android:id="@+id/school_name" />
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"            android:layout_height="wrap_content"
             android:text="Daal"
+            android:gravity="center"
 
             android:layout_gravity="center_horizontal" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"            android:layout_height="wrap_content"
             android:text="dal_text"
             android:id="@+id/daal_text" />
 
@@ -31,17 +37,20 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="5dp">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
             android:layout_height="wrap_content"
             android:text="Rice"
             android:layout_gravity="center_horizontal" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
+            android:layout_width="0dp"
+            android:layout_weight="1"            android:layout_height="wrap_content"
+            android:text="sds"
             android:id="@+id/rice_text" />
 
     </LinearLayout>
@@ -49,16 +58,21 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="5dp">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+
             android:layout_height="wrap_content"
             android:text="Vegetable"
             android:id="@+id/textView2"
             android:layout_gravity="center_horizontal" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="New Text"
             android:id="@+id/vegetable_text" />
@@ -67,15 +81,20 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="5dp">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+
             android:layout_height="wrap_content"
             android:text="Bread"
             android:layout_gravity="center_horizontal" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="New Text"
             android:id="@+id/bread_text" />

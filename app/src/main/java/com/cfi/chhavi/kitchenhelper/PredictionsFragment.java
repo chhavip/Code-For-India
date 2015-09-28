@@ -87,9 +87,9 @@ public class PredictionsFragment extends Fragment {
 
             switch(position){
                 case 0:
-                    return new SampleFragment();
+                    return new YesterdayFragment();
                 case 1:
-                    return new SampleFragment2();
+                    return new TodayFragment();
                 case 2:
                     return new TomorrowFragment();
             }

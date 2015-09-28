@@ -22,7 +22,7 @@ private MaterialAccount account;
         this.addAccount(account);
 
         this.addSection(newSection("Predictions", R.drawable.notification_template_icon_bg, new PredictionsFragment()));
-        this.addSection(newSection("School Wise", R.drawable.notification_template_icon_bg,new SampleFragment()));
+        this.addSection(newSection("School Wise", R.drawable.notification_template_icon_bg,new SchoolFragment()));
 
         this.addSection(newSection("Information", R.drawable.notification_template_icon_bg,new InformationFragment()));
 

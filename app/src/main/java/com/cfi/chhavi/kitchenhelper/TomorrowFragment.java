@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.cfi.chhavi.codeforindia.R;
+import com.cfi.chhavi.codeforindia.Utility;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
@@ -40,6 +41,7 @@ BarChart mChart;
         mChart.setMaxVisibleValueCount(60);
         //mChart.setOnChartValueSelectedListener(this);
         mChart.setDrawGridBackground(false);
+        mChart.animateY(2000);
 
         XAxis xAxis = mChart.getXAxis();
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
@@ -63,17 +65,25 @@ BarChart mChart;
     private void setData(int count, float range) {
 
         ArrayList<String> xVals = new ArrayList<String>();
-        for (int i = 0; i < count; i++) {
+        //for (int i = 0; i < count; i++) {
             xVals.add("rice");
-        }
+        xVals.add("pulses");
+        xVals.add("vegetables");
+        xVals.add("bread");
+       // }
 
         ArrayList<BarEntry> yVals1 = new ArrayList<BarEntry>();
+        float val = Utility.totalPeople(0, 452, 500);
+        yVals1.add(new BarEntry(val*170,0));
+        yVals1.add(new BarEntry(val*80,1));
+        yVals1.add(new BarEntry(val*150f,2));
+        yVals1.add(new BarEntry(val*80,3));
+     /*   for (int i = 0; i < 4; i++) {
+           // float mult = (range + 1);
+          //  float val = (float) (Math.random() * mult);
 
-        for (int i = 0; i < count; i++) {
-            float mult = (range + 1);
-            float val = (float) (Math.random() * mult);
             yVals1.add(new BarEntry(val, i));
-        }
+        }*/
 
         BarDataSet set1 = new BarDataSet(yVals1, "DataSet");
         set1.setBarSpacePercent(35f);
